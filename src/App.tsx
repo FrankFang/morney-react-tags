@@ -1,14 +1,9 @@
 import React from 'react';
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect
-} from 'react-router-dom';
-import styled from 'styled-components';
-import Nav from 'components/Nav';
-import Layout from 'components/Layout';
+import {HashRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import Money from './views/Money';
+import Statistics from './views/Statistics';
+import Tags from './views/Tags';
+import NoMatch from './views/NoMatch';
 
 
 function App() {
@@ -33,34 +28,5 @@ function App() {
   );
 }
 
-function NoMatch() {
-  return (
-    <div>页面不存在，你丫输错地址了吧！</div>
-  );
-}
-
-function Statistics() {
-  return (
-    <Layout>
-      <h2>统计页面</h2>
-    </Layout>
-  );
-}
-
-function Tags() {
-  return (
-    <Layout>
-      <h2>标签页面</h2>
-    </Layout>
-  );
-}
-
-function Money() {
-  return (
-    <Layout>
-      <h2>记账页面</h2>
-    </Layout>
-  );
-}
 
 export default App;
